@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './HomePage.css';
-import TopBox from './TopBox.tsx'; // Import the TopBox component
 
+import TopBox from './TopBox.tsx'; // Import the TopBox component
 import bannerImage from './assets/banner1.jpg'; // Import your banner image
 import adminImage from './assets/admin.jpg'; // Import your admin image
 import studentImage from './assets/stud.jpg'; // Import your student image
@@ -57,11 +57,11 @@ const HomePage = () => {
       </div>
       <div className="spacer"></div>
       <div className="home-page">
-        <div className="panel admin">
-          <img src={adminImage} alt="Admin" />
-          <h2>Admin</h2>
-          <p>Access admin functionalities.</p>
-        </div>
+          <div className="panel admin">
+            <img src={adminImage} alt="Admin" />
+            <h2>Admin</h2>
+            <p>Access admin functionalities.</p>
+          </div>
         <div className="panel student">
           <img src={studentImage} alt="Student" />
           <h2>Student</h2>

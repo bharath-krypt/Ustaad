@@ -80,6 +80,7 @@
 
 .panel:hover {
     transform: scale(1.1);
+    cursor: pointer;
     box-shadow: 0 0 40px 1px #7ed6f9;
 }
 .panel img {
