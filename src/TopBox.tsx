@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './TopBox.css';
 
+interface TopBoxProps {
+  onClose: () => void;
+}
 
-const TopBox = ({ onClose }) => {
+const TopBox: React.FC<TopBoxProps> = ({ onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     age: '',
@@ -10,11 +13,11 @@ const TopBox = ({ onClose }) => {
     email: ''
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Perform any actions with the form data here
     // For example, you can send the data to an API or store it locally

@@ -72,11 +72,15 @@
 
 .panel h2 {
     margin-bottom: 10px;
+    color: black;
+}
+.panel p{
+    color: black;
 }
 
 .panel:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 40px 1px #099fdb;
+    box-shadow: 0 0 40px 1px #7ed6f9;
 }
 .panel img {
     width: 100%; /* Make the image fill the entire width of the panel */
@@ -115,7 +119,8 @@
 .navbar {
     position: fixed;
     top: 0; /* Position at the top of the viewport */
-    left: 0; /* Align to the left side */
+    left: 0;
+    height: 2rem; /* Align to the left side */
     width: 100%; /* Full width of the viewport */
     z-index: 1000;
     background-color: #dae0fc; /* Set navbar background color */
@@ -133,6 +138,7 @@
     position: right;
 }
 .welcome-message {
+    color: black;
     text-align: center; /* Align content to the center */
     margin-top: 20px;
     margin-bottom: 20px /* Add top margin for spacing */
@@ -205,7 +211,7 @@
 }
 
 #feature .fe-box:hover {
-  box-shadow: 0px 8px 50px 5px #099fdb;
+  box-shadow: 0px 8px 50px 5px #7ed6f9;
   transition: 0.5s;
 }
 

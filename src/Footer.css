@@ -1,5 +1,6 @@
 footer {
     background-color: #dae0fc;
+    color: #222;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -13,17 +14,17 @@ footer .col {
 }
 
 footer .col img{
-    padding-left: 20px;
+    padding-left: 10px;
     padding-bottom: 25px;
     height: 70px;
     width: 260px;
 }
 
-footer h4 {
-    padding-left: 20px;
+footer .col h4 {
     font-size: 14px;
     padding-bottom: 20px; 
 }
+
 
 footer p {
     padding-left: 20px;
@@ -41,11 +42,12 @@ footer a {
 
 footer .follow {
     margin-top: 20px;
+    margin-left: 20px;
     
 }
 
 footer .follow a {
-    padding-left: 20px;
+    margin-right: 10px;
     color: #465b52;
     padding-right: 10px;
     cursor: pointer;
@@ -76,6 +78,8 @@ footer .copyright {
 #footerlogo {
     background-color: #dae0fc;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-bottom: 30px;
 }
+
+

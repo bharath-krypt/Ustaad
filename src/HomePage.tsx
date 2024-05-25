@@ -45,7 +45,7 @@ const HomePage = () => {
           <p>lets</p>
           <p>build</p>
           <p>your</p>
-          <p><font color="099fdb">Career</font></p>
+          <p><span style={{color:"099fdb"}}>Career</span></p>
         </div>
       </div>
       <br />

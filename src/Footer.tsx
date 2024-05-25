@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="section-p1">
       <div className="col">
-        <h4>About us</h4>
+        <h4 style={{paddingLeft:'25px'}}>About us</h4>
         <img src={LogoImage} alt="Logo" className='logo1'/>
         <p>
           <strong>Vision:</strong> To solve the generational problem -
@@ -29,7 +29,7 @@ const Footer = () => {
           <strong>Email:</strong> edtechstartup@gmail.com
         </p>
         <div className="follow">
-          <h4>Follow us</h4>
+          <h4 >Follow us</h4>
           <div className="icon">
             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faFacebookF} />
@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
 
       <div className="col">
-        <h4>Account</h4>
+        <h4 >Account</h4>
         <a href="#">Sign-In</a>
         <a href="#">Enroll</a>
         <a href="#">Courses</a>
