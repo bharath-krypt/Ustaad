@@ -68,9 +68,9 @@ import './TopBox.css';
 import CloseIcon from '@mui/icons-material/Close';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { db } from './firebase';  // Import the Firestore database
+import { db } from './firebase'; // Import the Firestore database
 import { collection, addDoc } from 'firebase/firestore';  // Import Firestore methods
-
+ 
 interface TopBoxProps {
   onClose: () => void;
 }
