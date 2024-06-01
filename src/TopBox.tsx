@@ -2,6 +2,8 @@ import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './TopBox.css';
 import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface TopBoxProps {
   onClose: () => void;
@@ -23,15 +25,17 @@ const TopBox: React.FC<TopBoxProps> = ({ onClose }) => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:5000/submit', formData);
-      console.log('Form submitted successfully');
+      toast.success('Form submitted successfully');
       onClose();
     } catch (error) {
+      toast.error('Error submitting form');
       console.error('Error submitting form', error);
     }
   };
 
   return (
     <div className="top-box">
+      <ToastContainer />
       <div className="close-btn" onClick={onClose}> <CloseIcon /> </div>
       <h2>Welcome to Our Website!</h2>
       <p>Thank you for visiting us. Please fill out the form below.</p>

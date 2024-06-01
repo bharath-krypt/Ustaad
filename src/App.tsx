@@ -1,4 +1,4 @@
-import React from 'react';
+
 import HomePage from './HomePage.tsx'; // Import the HomePage component
 
 const App = () => {
