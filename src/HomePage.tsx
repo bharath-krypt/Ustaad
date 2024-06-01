@@ -35,10 +35,10 @@ const HomePage = () => {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
-          <li><a href="#placements">Placements</a></li>
-          <li><a href="#facilities">Facilities</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#user"><FontAwesomeIcon icon={faUser} /></a></li>
+          {/* <li><a href="#placements">Placements</a></li>
+          <li><a href="#facilities">Facilities</a></li> */}
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/user"><FontAwesomeIcon icon={faUser} /></a></li>
         </ul>
       </div>
       <div className="banner">
