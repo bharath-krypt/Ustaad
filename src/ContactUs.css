@@ -1,32 +1,46 @@
-body{
-    background-image: url('./assets/conta.avif');
-}
-
 .contact-cont {
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
     align-items: center;
-    margin-top:30vh;
-    margin-left: 45vw;
     padding: 20px;
+    margin-top: 10rem;
   }
   
-.contact-us-container {
-    max-width: 600px;
+  .contact-us-container {
+    display: flex;
+    max-width: 1200px; /* Set a maximum width for the container */
     text-align: center;
+    gap: 30px;
   }
   
-  .contact-us-box {
-    background-color: #f9f9f9;
-    padding: 20px;
+  .image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-box img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  .contact-us-box {
+    background-color: #dfe8f0;
+    
+    flex: 1;
+    
+    padding: 30px;
+    padding-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.6s ease;
+  }
+  
   .contact-us-box:hover {
-    transition: .6s;
-    box-shadow: 5px 5px 15px rgb(11, 141, 201,0.4);
+    box-shadow: 5px 5px 15px rgba(11, 141, 201, 0.4);
   }
   
   .contact-us-title {
@@ -42,9 +56,8 @@ body{
     font-size: 18px;
     margin-bottom: 10px;
   }
-
-  .contact-us-text-t{
+  
+  .contact-us-text-t {
     font-size: 1.3rem;
   }
-
   

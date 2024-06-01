@@ -3,6 +3,7 @@ import './ContactUs.css';  // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
 import Logo1 from './assets/logo.png';
+import ContactImage from './assets/conta.avif'; // Import your image here
 import { Link } from 'react-router-dom';
 
 const ContactUs: React.FC = () => {
@@ -15,11 +16,15 @@ const ContactUs: React.FC = () => {
         <ul>
           <li><Link to="/Ustaad/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <li><Link to="/courses">Courses</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
           <li><a href="/user"><FontAwesomeIcon icon={faUser} /></a></li>
         </ul>
       </div>
       <div className="contact-us-container">
+        <div className="image-box">
+          <img src={ContactImage} alt="Contact" />
+        </div>
         <div className="contact-us-box">
           <h1 className="contact-us-title">Contact <span>Ustaad</span></h1>
           <p className="contact-us-text">
