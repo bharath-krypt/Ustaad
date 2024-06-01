@@ -33,7 +33,7 @@ const HomePage = () => {
           <img src={Logo1} alt="Logo1" />
         </div>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Ustaad/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
           {/* <li><a href="#placements">Placements</a></li>
           <li><a href="#facilities">Facilities</a></li> */}
