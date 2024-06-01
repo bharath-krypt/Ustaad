@@ -1,5 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import './TopBox.css';
+import CloseIcon from '@mui/icons-material/Close';
+import axios from 'axios';
 
 interface TopBoxProps {
   onClose: () => void;
@@ -17,17 +19,20 @@ const TopBox: React.FC<TopBoxProps> = ({ onClose }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Perform any actions with the form data here
-    // For example, you can send the data to an API or store it locally
-    console.log(formData);
-    onClose(); // Close the popup form after submitting
+    try {
+      await axios.post('http://localhost:5000/submit', formData);
+      console.log('Form submitted successfully');
+      onClose();
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
   };
 
   return (
     <div className="top-box">
-      <div className="close-btn" onClick={onClose}>X</div>
+      <div className="close-btn" onClick={onClose}> <CloseIcon /> </div>
       <h2>Welcome to Our Website!</h2>
       <p>Thank you for visiting us. Please fill out the form below.</p>
       <form onSubmit={handleSubmit}>

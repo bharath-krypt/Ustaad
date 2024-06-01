@@ -53,7 +53,7 @@
     color: black;
     text-align: center;
     border: 1px solid #ccc;
-    border-radius: 40px;
+    border-radius: 10px;
   }
   
   .top-box button {
@@ -75,11 +75,14 @@
   }
   
   .close-btn {
+    background-color:  gray;
+    border-radius:4px;
     position: absolute;
+    height: 25px;
     top: 10px;
     right: 10px;
     cursor: pointer;
     font-size: 20px;
-    color: #333;
+    color: white;
   }
   
