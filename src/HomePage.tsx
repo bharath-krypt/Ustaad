@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 
 import TopBox from './TopBox.tsx'; // Import the TopBox component
@@ -18,21 +19,22 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'; // Import the user i
 import Logo1 from './assets/logo.png';
 
 const HomePage = () => {
-   const [showTopBox, setShowTopBox] = useState(true);
+  const [showTopBox, setShowTopBox] = useState(true);
 
   const handleCloseTopBox = () => {
     setShowTopBox(false);
   };
+
   return (
     <div>
-       {showTopBox && <TopBox onClose={handleCloseTopBox} />} {/* Render the TopBox component */}
+      {showTopBox && <TopBox onClose={handleCloseTopBox} />} {/* Render the TopBox component */}
       <div className="navbar">
         <div className="logo">
           <img src={Logo1} alt="Logo1" />
         </div>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
           <li><a href="#placements">Placements</a></li>
           <li><a href="#facilities">Facilities</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -45,7 +47,7 @@ const HomePage = () => {
           <p>lets</p>
           <p>build</p>
           <p>your</p>
-          <p><span style={{color:"#099fdb"}}>Career</span></p>
+          <p><span style={{ color: "#099fdb" }}>Career</span></p>
         </div>
       </div>
       <br />
@@ -57,11 +59,11 @@ const HomePage = () => {
       </div>
       <div className="spacer"></div>
       <div className="home-page">
-          <div className="panel admin">
-            <img src={adminImage} alt="Admin" />
-            <h2>Admin</h2>
-            <p>Access admin functionalities.</p>
-          </div>
+        <div className="panel admin">
+          <img src={adminImage} alt="Admin" />
+          <h2>Admin</h2>
+          <p>Access admin functionalities.</p>
+        </div>
         <div className="panel student">
           <img src={studentImage} alt="Student" />
           <h2>Student</h2>
@@ -76,7 +78,7 @@ const HomePage = () => {
       <section id="banner" className="section-m1">
         <h4>Innovate - Integrate - Inspire</h4>
         <h2> Join us Kick start you <span>career</span></h2>
-        <button className="normal" onClick={() => window.location.href='student.html'}>Start here</button>
+        <button className="normal" onClick={() => window.location.href = 'student.html'}>Start here</button>
       </section>
       <br />
       <br />

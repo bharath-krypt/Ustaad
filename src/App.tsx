@@ -1,11 +1,14 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './HomePage';
+import AboutUs from './AboutUs';
 
-import HomePage from './HomePage.tsx'; // Import the HomePage component
-
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <Routes>
+      <Route path="/Ustaad/" element={<HomePage />} />
+      <Route path="/about" element={<AboutUs />} />
+    </Routes>
   );
 };
 
