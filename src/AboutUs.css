@@ -4,7 +4,7 @@
 
 .about-us-container {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image:url('./assets/abtbg.jpg');
+    background-image:url('./assets/abtbg.jpg'); 
     min-height: 97.5vh;
     display: flex;
     flex-direction: column;

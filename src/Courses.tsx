@@ -23,7 +23,7 @@ const AboutUs: React.FC = () => {
           <li><a href="/user"><FontAwesomeIcon icon={faUser} /></a></li>
         </ul>
       </div>
-    <div className="about-us-container">
+    <div className="courses-container">
       <div className="about-us-box">
         <h1 className="about-us-title">Coming <span>soon !</span></h1>
         

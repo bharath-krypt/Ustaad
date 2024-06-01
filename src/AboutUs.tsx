@@ -6,7 +6,7 @@ import Logo1 from './assets/logo.png';
 import { Link } from 'react-router-dom';
 
 
-const AboutUs: React.FC = () => {
+const AboutUs: React.FC = () => { 
   return (
     <div className='abt-cont'>
       <div className="navbar">

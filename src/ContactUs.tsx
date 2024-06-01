@@ -2,7 +2,7 @@ import React from 'react';
 import './ContactUs.css';  // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
-import Logo1 from './assets/logo.png';
+import Logo1 from './assets/logo.png'; 
 import ContactImage from './assets/conta.avif'; // Import your image here
 import { Link } from 'react-router-dom';
 
