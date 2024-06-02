@@ -1,0 +1,75 @@
+
+/* Layout for the main content area */
+
+
+.main-content {
+    display: flex;    
+    height: calc(100vh - 60px); /* Adjust based on your navbar height */
+  }
+  
+  /* Styling for the heading area */
+  .heading-area {
+    flex: 0 0 30%; /* Adjust the width as needed */
+    padding: 1.5rem;
+    overflow: auto;
+    margin: 3%;
+    max-height: 60vh;
+    border-radius: 3rem;
+    margin-top: 10%;
+    margin-left: 10%;
+    transition: all .5s ease;
+    top: 0;
+    background-color: #f9f9f9;
+    height: calc(100vh - 60px); /* Adjust based on your navbar height */
+  }
+  .heading-area:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+    box-shadow: 0 0 40px 1px #7ed6f9;
+  }
+  
+  .heading-area h1 {
+    font-size: 24 px;
+    text-align: center;
+    margin-top: 22rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: lightcoral;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .heading-area p {
+    font-size: 16px;
+  }
+  
+  /* Styling for the panel list */
+  .panel-list {
+    background-color: #e6f5e6;
+    flex: 1;
+    padding: 20px;
+    margin-top: 3rem;
+    padding-top: 5rem;
+    margin-left: 12%;
+    overflow-y: auto;
+    padding-left: 4rem;
+    height: 84%;
+
+  }
+  
+  .panels {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+  }
+  
+  .panels h2 {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+
+  
